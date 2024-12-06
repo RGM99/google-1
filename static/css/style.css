@@ -82,7 +82,7 @@ body {
                     height: 30px;
                     border: none;
                     text-decoration: none;
-                    
+                    outline: none;
                 }
                 a {
                      height: 20px;
