@@ -157,7 +157,7 @@ body {
 
                     div.remove {
                         position: absolute;
-                        top: 0;
+                        top: 5px;
                         right: 0;
 
                         height: 30px;
@@ -169,7 +169,7 @@ body {
                         justify-content: center;
                         
 
-                        /* visibility: hidden;                       */
+                                          
 
 
                         a{
@@ -183,11 +183,11 @@ body {
                                 /* background-color: rgb(6, 122, 223); */
                                 border-radius: 50%;
                                 height: 30px;
-                                
+                                transition: 1s;
                                 display: flexbox;
                                 align-self: center;
                                 justify-self: center;
-
+                                /* visibility: hidden; */
                                 /* background-color: gray; */
                                 /* border-radius: 50%; */
                                 /* margin: 5px; */
@@ -208,6 +208,38 @@ body {
 
     }
 
+    footer {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: rgb(170, 218, 240);
+        width: 160px;
+        height: 30px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        font-family: 'Arial';
+        font-size: small;
+        box-shadow: 0px 1px 3px 1px rgb(210, 209, 209);
+
+        div#cust {
+           
+
+            img {
+                height: 12px;
+                
+            }
+            a {
+                /* background-color: antiquewhite; */
+                align-items: center;
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+    }
+
 
 
 
@@ -220,26 +252,38 @@ div.sc:hover{
     
 }
 
-.sc:hover .remove {
-    visibility:visible;
-    /* float: right; */
-    vertical-align: top;
-}
+
 .bi, bi-three-dots-vertical{
-    color: grey;
+    color: rgb(12, 10, 10);
 }
 .bi-three-dots-vertical:hover {
-    color: #cc0033;
+   
+    color: #1b1618;
+   
 }
 .spacer {
     padding-left: 10px
 }
 .bi-three-dots-vertical {
-    font-size: 16px!important
+    font-size: 15px!important;
+       
 }
 
-
-
+.bi-three-dots-vertical:hover{
+    background-color: rgb(147, 132, 132)!important;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.bi {
+    display: none;
+    
+}
+.sc:hover .bi {
+    display: inline;
+    transition: 1s;
+    
+}
 
 }
 
