@@ -163,13 +163,13 @@ body {
                         height: 30px;
                         width: 30px;
                         border-radius: 50%;
-                        background-color: antiquewhite;
+                        /* background-color: antiquewhite; */
 
                         display: flex;
                         justify-content: center;
                         
 
-                        visibility: hidden;                      
+                        /* visibility: hidden;                       */
 
 
                         a{
@@ -180,7 +180,7 @@ body {
                               i{
                                 /* position: absolute; */
                                 width: 30px;
-                                background-color: rgb(6, 122, 223);
+                                /* background-color: rgb(6, 122, 223); */
                                 border-radius: 50%;
                                 height: 30px;
                                 
@@ -215,15 +215,30 @@ a:hover {
     text-decoration: solid;
 }
 
-div.sc:hover .remove{
+div.sc:hover{
     background-color: rgb(217, 217, 217);
-    visibility: visible;
-}
-
-@media screen and (max-width:"480px"){
-
     
 }
+
+.sc:hover .remove {
+    visibility:visible;
+    /* float: right; */
+    vertical-align: top;
+}
+.bi, bi-three-dots-vertical{
+    color: grey;
+}
+.bi-three-dots-vertical:hover {
+    color: #cc0033;
+}
+.spacer {
+    padding-left: 10px
+}
+.bi-three-dots-vertical {
+    font-size: 16px!important
+}
+
+
 
 
 }
